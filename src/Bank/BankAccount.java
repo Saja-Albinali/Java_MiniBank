@@ -38,19 +38,15 @@ public class BankAccount {
             System.out.println(",ust be positive");
         }
     }
-
     public void displayTransactionHistory() {
         System.out.println("history: ");
         for (Transaction transaction : transactionHistory) {
             System.out.println(transaction);
         }
     }
-
     public double getBalance() {
         return balance;
     }
-
-    // Setter for account balance
     public void setBalance(double balance) {
         if (balance >= 0) {  // Balance should not be negative
             this.balance = balance;
@@ -60,12 +56,9 @@ public class BankAccount {
         }
     }
 
-    // Getter for account number
     public String getAccountNumber() {
         return accountNumber;
     }
-
-    // Setter for account number
     public void setAccountNumber(String accountNumber) {
         if (accountNumber != null && !accountNumber.isEmpty()) {
             this.accountNumber = accountNumber;
